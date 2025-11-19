@@ -2,7 +2,7 @@
 This Python script monitors whether specific URLs from your website are indexed by Google using the Google Search Console API.  
 If any monitored URL is not indexed, you’ll receive an email.
 
-This is my frist ever Python script. In this blogpost I explain why I built it. [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/)
+This is my frist ever Python script. Full walkthrough is here: [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/)
 
 ## Features
 
@@ -23,11 +23,26 @@ This is my frist ever Python script. In this blogpost I explain why I built it. 
 Run in Terminal:
 
 ```bash
-git clone https://github.com/yourusername/gsc-index-alert.git
+git clone https://github.com/Corina-Bu/gsc-index-alert.git
 cd gsc-index-alert
 ```
 
-2. **Create your .env file based on .env.example:**
+2. **Add URLs to monitor**
+
+Edit `urls.txt` and enter one URL per line.
+I added a non-existent URL to confirm that the script is working in case all URLs are indexed.
+
+
+3. **Add your Google OAuth credentials**
+4. 
+This script uses Google's OAuth. For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#enable-gsc-api).
+
+Place your own credentials file named `credentials.json` in the project folder.
+Do not share this file publicly.
+Optionally, keep a placeholder `credentials.json.example` for reference.
+
+4. **Create your .env file based on .env.example:**
+   
 ```bash
 
 SMTP_SERVER=
@@ -37,17 +52,7 @@ SENDER_PASSWORD=
 RECIPIENT_EMAIL=
 SITE_URL=
 ```
-3. **Add your Google OAuth credentials**
-This script uses Google's OAuth. For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#enable-gsc-api).
 
-Place your own credentials file named `credentials.json` in the project folder.
-Do not share this file publicly.
-Optionally, keep a placeholder `credentials.json.example` for reference.
-
-4. **Add URLs to monitor**
-
-Edit `urls.txt` and enter one URL per line.
-I added a non-exist URL to test the script.
 
 5. **Install dependencies**
 
@@ -55,16 +60,23 @@ I added a non-exist URL to test the script.
 pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
 ```
 
-5. **Run the script**
+6. **Run the script**
+
+```bash
+pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
 ```
-python3 gsc_alert.py
+Or with an absolute path:
+```bash
+python3 /path/to/your/folder/gsc_alert.py
 ```
 
-6. **Automate with cron (macOS )**
+7. **Automate with cron (macOS )**
 Example: run every Tuesday at 10:35 am
 ```
 35 10 * * 2 /usr/bin/python3 /path/to/gsc_alert.py >> /path/to/gsc_alert.log 2>&1
 ```
+
+
 
    
 ---
