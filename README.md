@@ -12,7 +12,7 @@ This is my frist ever Python script. Full walkthrough is here: [corinaburri.com/
 - Cron-job ready for automated weekly checks  
 
 ## Requirements
-- A Google account with at least one website [verified](https://support.google.com/webmasters/answer/9008080) in Google Search Console.
+ - Google account with your website [verified](https://support.google.com/webmasters/answer/9008080) in Google Search Console.
 
 ---
 
