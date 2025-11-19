@@ -11,6 +11,9 @@ This is my frist ever Python script. In this blogpost I explain why I built it. 
 - Supports `.env` for secure credentials  
 - Cron-job ready for automated weekly checks  
 
+## Requirements
+- A Google account with at least one website [verified](https://support.google.com/webmasters/answer/9008080) in Google Search Console.
+
 ---
 
 ## Setup
