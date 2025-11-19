@@ -50,3 +50,25 @@ I added a non-exist URL to test the script.
 ```bash
 pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
 ```
+
+5. **Run the script**
+```
+python3 gsc_alert.py
+```
+
+6. **Automate with cron (macOS )**
+Example: run every Tuesday at 10:35 am
+```
+35 10 * * 2 /usr/bin/python3 /path/to/gsc_alert.py >> /path/to/gsc_alert.log 2>&1
+```
+
+   
+---
+
+## **Notes**
+
+The script generates ```token.json``` after OAuth login. Do not commit this file.
+Keep ```.env``` and ```credentials.json``` private to protect your credentials.
+
+
+Contributions are welcome, you can also [buy me a coffee](https://buymeacoffee.com/corinaburri).
