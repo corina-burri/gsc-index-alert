@@ -17,11 +17,15 @@ This is my frist ever Python script. In this blogpost I explain why I built it. 
 
 1. **Clone the repository**
 
+Run in Terminal:
+
 ```bash
 git clone https://github.com/yourusername/gsc-index-alert.git
 cd gsc-index-alert
+```
 
 2. **Create your .env file based on .env.example:**
+```bash
 
 SMTP_SERVER=
 SMTP_PORT=
@@ -29,19 +33,20 @@ SENDER_EMAIL=
 SENDER_PASSWORD=
 RECIPIENT_EMAIL=
 SITE_URL=
-
+```
 3. **Add your Google OAuth credentials**
 
-Place your own credentials file named `credentials.json` in the project folder
-Do not share this file publicly
+Place your own credentials file named `credentials.json` in the project folder.
+Do not share this file publicly.
 Optionally, keep a placeholder `credentials.json.example` for reference
 
 4. **Add URLs to monitor**
 
-Edit `urls.txt` and enter one URL per line
-Add noneistent URL to test the script
+Edit `urls.txt` and enter one URL per line.
+I added a non-exist URL to test the script.
 
-5. Install dependencies
+5. **Install dependencies**
 
 ```bash
 pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
+```
