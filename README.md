@@ -1,3 +1,47 @@
 # gsc-index-alert
-This script sends users of Google Search Console (GSC) an email notification, if a URL of the website is not indexed. Requires primary ownership of GSC property. 
-I explain the setup in detail on [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/)
+This Python script monitors whether specific URLs from your website are indexed by Google using the Google Search Console API.  
+If any monitored URL is not indexed, you’ll receive an email.
+
+This is my frist ever Python script. In this blogpost I explain why I built it. [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/)
+
+## Features
+
+- Uses the URL Inspection API from Google Search Console  
+- Sends email alerts for de-indexed URLs  
+- Supports `.env` for secure credentials  
+- Cron-job ready for automated weekly checks  
+
+---
+
+## Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/gsc-index-alert.git
+cd gsc-index-alert
+
+2. **Create your .env file based on .env.example:**
+
+SMTP_SERVER=
+SMTP_PORT=
+SENDER_EMAIL=
+SENDER_PASSWORD=
+RECIPIENT_EMAIL=
+SITE_URL=
+
+3. **Add your Google OAuth credentials**
+
+Place your own credentials file named `credentials.json` in the project folder
+Do not share this file publicly
+Optionally, keep a placeholder `credentials.json.example` for reference
+
+4. **Add URLs to monitor**
+
+Edit `urls.txt` and enter one URL per line
+Add noneistent URL to test the script
+
+5. Install dependencies
+
+```bash
+pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
