@@ -35,10 +35,11 @@ RECIPIENT_EMAIL=
 SITE_URL=
 ```
 3. **Add your Google OAuth credentials**
+This script uses Google's OAuth. For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#enable-gsc-api).
 
 Place your own credentials file named `credentials.json` in the project folder.
 Do not share this file publicly.
-Optionally, keep a placeholder `credentials.json.example` for reference
+Optionally, keep a placeholder `credentials.json.example` for reference.
 
 4. **Add URLs to monitor**
 
