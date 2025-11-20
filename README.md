@@ -65,11 +65,13 @@ pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-py
 ```bash
 python gsc_alert.py
 ```
+
 Or with an absolute path:
 ```bash
 cd 
 "/Users/yourname/Documents/gsc-alert/"
-python3 gsc_alert.py```
+python3 gsc_alert.py
+```
 
 7. **Automate with cron (macOS )**
 Example: run every Tuesday at 10:35 am
@@ -88,4 +90,4 @@ The script generates ```token.json``` after OAuth login. Do not commit this file
 Keep ```.env``` and ```credentials.json``` private to protect your credentials.
 
 
-Contributions are welcome, you can also [buy me a coffee](https://buymeacoffee.com/corinaburri).
+Feedback and contributions are very welcome, you can also [buy me a coffee](https://buymeacoffee.com/corinaburri).
