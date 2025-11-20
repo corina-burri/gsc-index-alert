@@ -35,7 +35,7 @@ I added a non-existent URL to confirm that the script is working in case all URL
 
 3. **Enable Google Search Console API and add your Google OAuth credentials**
    
-This script uses Google Search Google API and Google OAuth.  For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#4-enable-google-search-console-api-on-google-cloud).
+This script uses Google Search Google API and Google OAuth.  For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#4-enable-the-google-search-console-api-in-google-cloud)
 
 Place your own credentials file named `credentials.json` in the project folder.
 Do not share this file publicly.
