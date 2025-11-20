@@ -23,7 +23,7 @@ Full walkthrough is here: [corinaburri.com/gsc-index-alert/](https://corinaburri
 Run in Terminal:
 
 ```bash
-git clone https://github.com/Corina-Bu/gsc-index-alert.git
+git clone https://github.com/corina-burri/gsc-index-alert.git
 cd gsc-index-alert
 ```
 
@@ -33,9 +33,9 @@ Edit `urls.txt` and enter one URL per line.
 I added a non-existent URL to confirm that the script is working in case all URLs are indexed.
 
 
-3. **Add your Google OAuth credentials**
-4. 
-This script uses Google's OAuth. For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#4-enable-google-search-console-api-on-google-cloud).
+3. **Enable Google Search Console API and add your Google OAuth credentials**
+   
+This script uses Google Search Google API and Google OAuth.  For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#4-enable-google-search-console-api-on-google-cloud).
 
 Place your own credentials file named `credentials.json` in the project folder.
 Do not share this file publicly.
