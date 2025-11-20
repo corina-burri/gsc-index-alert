@@ -63,12 +63,13 @@ pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-py
 6. **Run the script**
 
 ```bash
-pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
+python gsc_alert.py
 ```
 Or with an absolute path:
 ```bash
-python3 /path/to/your/folder/gsc_alert.py
-```
+cd 
+"/Users/yourname/Documents/gsc-alert/"
+python3 gsc_alert.py```
 
 7. **Automate with cron (macOS )**
 Example: run every Tuesday at 10:35 am
