@@ -4,3 +4,4 @@ https://yourdomain.com/money-page-3/
 https://yourdomain.com/blog/article-1/
 https://yourdomain.com/blog/article-2/
 https://yourdomain.com/blog/article-3/
+https://yourdomain.com/non-existing-url-to-test-the-whole-thing/
