@@ -1,8 +1,8 @@
 # gsc-index-alert
 This Python script monitors whether specific URLs from your website are indexed by Google using the Google Search Console API.  
-If any monitored URL is not indexed, you’ll receive an email.
+If any monitored URL is deindexed, you’ll receive an email.
 
-This is my frist ever Python script. Full walkthrough is here: [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/)
+Full walkthrough is here: [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/) (And also, this is my very first Python project. Any feedback is welcome).
 
 ## Features
 
