@@ -63,7 +63,7 @@ pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-py
 6. **Run the script**
 
 ```bash
-python gsc_alert.py
+python3 gsc_alert.py
 ```
 
 Or with an absolute path:
