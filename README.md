@@ -2,7 +2,7 @@
 This Python script monitors whether specific URLs from your website are indexed by Google using the Google Search Console API.  
 If any monitored URL is deindexed, you’ll receive an email.
 
-Full walkthrough is here: [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/) (And also, this is my very first Python project. Any feedback is welcome).
+Full walkthrough in detail is here: [corinaburri.com/gsc-index-alert/](https://corinaburri.com/gsc-index-alert/).
 
 ## Features
 
@@ -35,7 +35,7 @@ I added a non-existent URL to confirm that the script is working in case all URL
 
 3. **Enable Google Search Console API and add your Google OAuth credentials**
    
-This script uses Google Search Google API and Google OAuth.  For full instructions on enabling the Google Search Console API and creating `credentials.json`, see the walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#4-enable-the-google-search-console-api-in-google-cloud)
+This script uses Google Search Google API and Google OAuth.  For full instructions on enabling the Google Search Console API and creating `credentials.json`, see detailed walkthrough on the [blogpost](https://www.corinaburri.com/gsc-index-alert/) in the section [_Enable Google Search Console API on Google Cloud_](https://www.corinaburri.com/gsc-index-alert/#4-enable-the-google-search-console-api-in-google-cloud)
 
 Place your own credentials file named `credentials.json` in the project folder.
 Do not share this file publicly.
@@ -90,4 +90,4 @@ The script generates ```token.json``` after OAuth login. Do not commit this file
 Keep ```.env``` and ```credentials.json``` private to protect your credentials.
 
 
-Feedback and contributions are very welcome, you can also [buy me a coffee](https://buymeacoffee.com/corinaburri).
+Found a bug or have an idea for improvement? I welcome your input! You can also [buy me a coffee](https://buymeacoffee.com/corinaburri).
